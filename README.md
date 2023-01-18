@@ -16,14 +16,23 @@
 > Предварительно у вас должны быть установлены Docker и Docker-compose
 
 - Перейти в папку infra/;
+
 - Выполнить команду по развертыванию контейнера:
+
 ```sudo docker-compose up```
+
 - Выполнить миграции:
+
 ```sudo docker-compose exec web python manage.py migrate```
+
 - Создайте пользователя-админастратора:
+
 ```sudo docker-compose exec web python manage.py createsuperuser```
+
 - Заполните базу данных данными следующей командой:
+
 ```sudo docker-compose exec web python manage.py loaddata fixtures.json```
+
 - Теперь проект доступен в вашем браузере по адресу localhost.
 
 
