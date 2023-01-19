@@ -17,9 +17,22 @@
 
 - Перейти в папку infra/;
 
+- Создайте файл ".env" и поместите в него следущее:
+
+```DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432```
+
 - Выполнить команду по развертыванию контейнера:
 
 ```sudo docker-compose up```
+
+- Выполнить команду для сбора статики:
+
+```sudo docker-compose exec web python manage.py collectstatic```
 
 - Выполнить миграции:
 

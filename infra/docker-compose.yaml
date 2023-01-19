@@ -4,12 +4,12 @@ services:
   db:
     image: postgres:13.0-alpine
     volumes:
-      - /var/lib/postgresql/data/
+      - .:/var/lib/postgresql/data/
     env_file:
       - ./.env
 
   web:
-    build: /home/troyan/Dev/infra_sp2/api_yamdb/
+    build: ../api_yamdb/
     restart: always
     volumes:
       - static_value:/app/static/
