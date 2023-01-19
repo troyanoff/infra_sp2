@@ -19,12 +19,12 @@
 
 - Создайте файл ".env" и поместите в него следущее:
 
-```DB_ENGINE=django.db.backends.postgresql```
-```DB_NAME=postgres```
-```POSTGRES_USER=postgres```
-```POSTGRES_PASSWORD=postgres```
-```DB_HOST=db```
-```DB_PORT=5432```
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432
 
 - Выполнить команду по развертыванию контейнера:
 
